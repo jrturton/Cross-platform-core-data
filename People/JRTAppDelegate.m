@@ -107,14 +107,22 @@
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"People.sqlite"];
     
+    
     // Copy over our default database to the documents directory, for this example
     NSURL *defaultURL = [[NSBundle mainBundle] URLForResource:@"DefaultPeople" withExtension:@"sqlite"];
-    [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
-    [[NSFileManager defaultManager] copyItemAtURL:defaultURL toURL:storeURL error:nil];
     
+    // Need to remove entire contents of directory as sqlite logging and rollback files are still present.
+    for (NSURL *fileToRemove in [[NSFileManager defaultManager] contentsOfDirectoryAtURL:[self applicationDocumentsDirectory] includingPropertiesForKeys:nil options:0 error:nil])
+    {
+        [[NSFileManager defaultManager] removeItemAtURL:fileToRemove error:nil];
+    }
+    
+    [[NSFileManager defaultManager] copyItemAtURL:defaultURL toURL:storeURL error:nil];
+
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES};
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          
@@ -133,7 +141,7 @@
          [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
          
          * Performing automatic lightweight migration by passing the following dictionary as the options parameter:
-         @{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES}
+         
          
          Lightweight migration will only work for a limited set of schema changes; consult "Core Data Model Versioning and Data Migration Programming Guide" for details.
          

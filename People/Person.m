@@ -15,4 +15,10 @@
 @dynamic birthDate;
 @dynamic surname;
 
+-(void)awakeFromInsert
+{
+    [super awakeFromInsert];
+    self.birthDate = [NSDate dateWithTimeIntervalSince1970:0.0];
+}
+
 @end
