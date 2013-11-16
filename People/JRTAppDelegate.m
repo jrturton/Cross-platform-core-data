@@ -107,6 +107,11 @@
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"People.sqlite"];
     
+    // Copy over our default database to the documents directory, for this example
+    NSURL *defaultURL = [[NSBundle mainBundle] URLForResource:@"DefaultPeople" withExtension:@"sqlite"];
+    [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
+    [[NSFileManager defaultManager] copyItemAtURL:defaultURL toURL:storeURL error:nil];
+    
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {

@@ -25,6 +25,22 @@
 		606F81951838111A00098F59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F81701838111A00098F59 /* CoreData.framework */; };
 		606F819D1838111A00098F59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606F819B1838111A00098F59 /* InfoPlist.strings */; };
 		606F819F1838111A00098F59 /* PeopleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F819E1838111A00098F59 /* PeopleTests.m */; };
+		606F81AE1838113D00098F59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F81AD1838113D00098F59 /* Cocoa.framework */; };
+		606F81B81838113D00098F59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606F81B61838113D00098F59 /* InfoPlist.strings */; };
+		606F81BA1838113D00098F59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F81B91838113D00098F59 /* main.m */; };
+		606F81BE1838113D00098F59 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 606F81BC1838113D00098F59 /* Credits.rtf */; };
+		606F81C11838113D00098F59 /* JRTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F81C01838113D00098F59 /* JRTDocument.m */; };
+		606F81C41838113D00098F59 /* JRTDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606F81C21838113D00098F59 /* JRTDocument.xib */; };
+		606F81C71838113D00098F59 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606F81C51838113D00098F59 /* MainMenu.xib */; };
+		606F81CC1838113D00098F59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606F81CB1838113D00098F59 /* Images.xcassets */; };
+		606F81D21838113E00098F59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F81911838111A00098F59 /* XCTest.framework */; };
+		606F81D31838113E00098F59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606F81AD1838113D00098F59 /* Cocoa.framework */; };
+		606F81DB1838113E00098F59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606F81D91838113E00098F59 /* InfoPlist.strings */; };
+		606F81DD1838113E00098F59 /* People_Data_BuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F81DC1838113E00098F59 /* People_Data_BuilderTests.m */; };
+		606F82281838139400098F59 /* People.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 606F81811838111A00098F59 /* People.xcdatamodeld */; };
+		606F822B1838145E00098F59 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F822A1838145E00098F59 /* Person.m */; };
+		606F822C1838145E00098F59 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 606F822A1838145E00098F59 /* Person.m */; };
+		606F822E18381E2000098F59 /* DefaultPeople.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 606F822D18381E2000098F59 /* DefaultPeople.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 606F81661838111A00098F59;
 			remoteInfo = People;
+		};
+		606F81D41838113E00098F59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 606F815F1838111A00098F59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 606F81AB1838113D00098F59;
+			remoteInfo = "People Data Builder";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +84,28 @@
 		606F819A1838111A00098F59 /* PeopleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeopleTests-Info.plist"; sourceTree = "<group>"; };
 		606F819C1838111A00098F59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606F819E1838111A00098F59 /* PeopleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleTests.m; sourceTree = "<group>"; };
+		606F81AC1838113D00098F59 /* People Data Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "People Data Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		606F81AD1838113D00098F59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		606F81B01838113D00098F59 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		606F81B11838113D00098F59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		606F81B21838113D00098F59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		606F81B51838113D00098F59 /* People Data Builder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "People Data Builder-Info.plist"; sourceTree = "<group>"; };
+		606F81B71838113D00098F59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		606F81B91838113D00098F59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		606F81BB1838113D00098F59 /* People Data Builder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "People Data Builder-Prefix.pch"; sourceTree = "<group>"; };
+		606F81BD1838113D00098F59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		606F81BF1838113D00098F59 /* JRTDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTDocument.h; sourceTree = "<group>"; };
+		606F81C01838113D00098F59 /* JRTDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRTDocument.m; sourceTree = "<group>"; };
+		606F81C31838113D00098F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JRTDocument.xib; sourceTree = "<group>"; };
+		606F81C61838113D00098F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		606F81CB1838113D00098F59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		606F81D11838113E00098F59 /* People Data BuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "People Data BuilderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		606F81D81838113E00098F59 /* People Data BuilderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "People Data BuilderTests-Info.plist"; sourceTree = "<group>"; };
+		606F81DA1838113E00098F59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		606F81DC1838113E00098F59 /* People_Data_BuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People_Data_BuilderTests.m; sourceTree = "<group>"; };
+		606F82291838145E00098F59 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		606F822A1838145E00098F59 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		606F822D18381E2000098F59 /* DefaultPeople.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DefaultPeople.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +131,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		606F81A91838113D00098F59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606F81AE1838113D00098F59 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		606F81CE1838113D00098F59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606F81D31838113E00098F59 /* Cocoa.framework in Frameworks */,
+				606F81D21838113E00098F59 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +156,8 @@
 			children = (
 				606F81721838111A00098F59 /* People */,
 				606F81981838111A00098F59 /* PeopleTests */,
+				606F81B31838113D00098F59 /* People Data Builder */,
+				606F81D61838113E00098F59 /* People Data BuilderTests */,
 				606F81691838111A00098F59 /* Frameworks */,
 				606F81681838111A00098F59 /* Products */,
 			);
@@ -104,6 +168,8 @@
 			children = (
 				606F81671838111A00098F59 /* People.app */,
 				606F81901838111A00098F59 /* PeopleTests.xctest */,
+				606F81AC1838113D00098F59 /* People Data Builder.app */,
+				606F81D11838113E00098F59 /* People Data BuilderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +182,8 @@
 				606F816E1838111A00098F59 /* UIKit.framework */,
 				606F81701838111A00098F59 /* CoreData.framework */,
 				606F81911838111A00098F59 /* XCTest.framework */,
+				606F81AD1838113D00098F59 /* Cocoa.framework */,
+				606F81AF1838113D00098F59 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +191,7 @@
 		606F81721838111A00098F59 /* People */ = {
 			isa = PBXGroup;
 			children = (
+				606F822D18381E2000098F59 /* DefaultPeople.sqlite */,
 				606F817B1838111A00098F59 /* JRTAppDelegate.h */,
 				606F817C1838111A00098F59 /* JRTAppDelegate.m */,
 				606F817E1838111A00098F59 /* Main.storyboard */,
@@ -132,6 +201,8 @@
 				606F81881838111A00098F59 /* JRTDetailViewController.m */,
 				606F818A1838111A00098F59 /* Images.xcassets */,
 				606F81811838111A00098F59 /* People.xcdatamodeld */,
+				606F82291838145E00098F59 /* Person.h */,
+				606F822A1838145E00098F59 /* Person.m */,
 				606F81731838111A00098F59 /* Supporting Files */,
 			);
 			path = People;
@@ -162,6 +233,59 @@
 			children = (
 				606F819A1838111A00098F59 /* PeopleTests-Info.plist */,
 				606F819B1838111A00098F59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		606F81AF1838113D00098F59 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				606F81B01838113D00098F59 /* AppKit.framework */,
+				606F81B11838113D00098F59 /* CoreData.framework */,
+				606F81B21838113D00098F59 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		606F81B31838113D00098F59 /* People Data Builder */ = {
+			isa = PBXGroup;
+			children = (
+				606F81BF1838113D00098F59 /* JRTDocument.h */,
+				606F81C01838113D00098F59 /* JRTDocument.m */,
+				606F81C21838113D00098F59 /* JRTDocument.xib */,
+				606F81C51838113D00098F59 /* MainMenu.xib */,
+				606F81CB1838113D00098F59 /* Images.xcassets */,
+				606F81B41838113D00098F59 /* Supporting Files */,
+			);
+			path = "People Data Builder";
+			sourceTree = "<group>";
+		};
+		606F81B41838113D00098F59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				606F81B51838113D00098F59 /* People Data Builder-Info.plist */,
+				606F81B61838113D00098F59 /* InfoPlist.strings */,
+				606F81B91838113D00098F59 /* main.m */,
+				606F81BB1838113D00098F59 /* People Data Builder-Prefix.pch */,
+				606F81BC1838113D00098F59 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		606F81D61838113E00098F59 /* People Data BuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				606F81DC1838113E00098F59 /* People_Data_BuilderTests.m */,
+				606F81D71838113E00098F59 /* Supporting Files */,
+			);
+			path = "People Data BuilderTests";
+			sourceTree = "<group>";
+		};
+		606F81D71838113E00098F59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				606F81D81838113E00098F59 /* People Data BuilderTests-Info.plist */,
+				606F81D91838113E00098F59 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,6 +328,41 @@
 			productReference = 606F81901838111A00098F59 /* PeopleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		606F81AB1838113D00098F59 /* People Data Builder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 606F81DE1838113E00098F59 /* Build configuration list for PBXNativeTarget "People Data Builder" */;
+			buildPhases = (
+				606F81A81838113D00098F59 /* Sources */,
+				606F81A91838113D00098F59 /* Frameworks */,
+				606F81AA1838113D00098F59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "People Data Builder";
+			productName = "People Data Builder";
+			productReference = 606F81AC1838113D00098F59 /* People Data Builder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		606F81D01838113D00098F59 /* People Data BuilderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 606F81E11838113E00098F59 /* Build configuration list for PBXNativeTarget "People Data BuilderTests" */;
+			buildPhases = (
+				606F81CD1838113D00098F59 /* Sources */,
+				606F81CE1838113D00098F59 /* Frameworks */,
+				606F81CF1838113D00098F59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				606F81D51838113E00098F59 /* PBXTargetDependency */,
+			);
+			name = "People Data BuilderTests";
+			productName = "People Data BuilderTests";
+			productReference = 606F81D11838113E00098F59 /* People Data BuilderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,6 +374,9 @@
 				ORGANIZATIONNAME = Mubaloo;
 				TargetAttributes = {
 					606F818F1838111A00098F59 = {
+						TestTargetID = 606F81661838111A00098F59;
+					};
+					606F81D01838113D00098F59 = {
 						TestTargetID = 606F81661838111A00098F59;
 					};
 				};
@@ -234,6 +396,8 @@
 			targets = (
 				606F81661838111A00098F59 /* People */,
 				606F818F1838111A00098F59 /* PeopleTests */,
+				606F81AB1838113D00098F59 /* People Data Builder */,
+				606F81D01838113D00098F59 /* People Data BuilderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +409,7 @@
 			files = (
 				606F818B1838111A00098F59 /* Images.xcassets in Resources */,
 				606F81771838111A00098F59 /* InfoPlist.strings in Resources */,
+				606F822E18381E2000098F59 /* DefaultPeople.sqlite in Resources */,
 				606F81801838111A00098F59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +422,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		606F81AA1838113D00098F59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606F81B81838113D00098F59 /* InfoPlist.strings in Resources */,
+				606F81CC1838113D00098F59 /* Images.xcassets in Resources */,
+				606F81BE1838113D00098F59 /* Credits.rtf in Resources */,
+				606F81C41838113D00098F59 /* JRTDocument.xib in Resources */,
+				606F81C71838113D00098F59 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		606F81CF1838113D00098F59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606F81DB1838113E00098F59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606F822B1838145E00098F59 /* Person.m in Sources */,
 				606F81791838111A00098F59 /* main.m in Sources */,
 				606F81831838111A00098F59 /* People.xcdatamodeld in Sources */,
 				606F817D1838111A00098F59 /* JRTAppDelegate.m in Sources */,
@@ -280,6 +466,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		606F81A81838113D00098F59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606F81BA1838113D00098F59 /* main.m in Sources */,
+				606F82281838139400098F59 /* People.xcdatamodeld in Sources */,
+				606F822C1838145E00098F59 /* Person.m in Sources */,
+				606F81C11838113D00098F59 /* JRTDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		606F81CD1838113D00098F59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606F81DD1838113E00098F59 /* People_Data_BuilderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,6 +492,11 @@
 			isa = PBXTargetDependency;
 			target = 606F81661838111A00098F59 /* People */;
 			targetProxy = 606F81961838111A00098F59 /* PBXContainerItemProxy */;
+		};
+		606F81D51838113E00098F59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 606F81AB1838113D00098F59 /* People Data Builder */;
+			targetProxy = 606F81D41838113E00098F59 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +521,46 @@
 			isa = PBXVariantGroup;
 			children = (
 				606F819C1838111A00098F59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		606F81B61838113D00098F59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				606F81B71838113D00098F59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		606F81BC1838113D00098F59 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				606F81BD1838113D00098F59 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		606F81C21838113D00098F59 /* JRTDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				606F81C31838113D00098F59 /* Base */,
+			);
+			name = JRTDocument.xib;
+			sourceTree = "<group>";
+		};
+		606F81C51838113D00098F59 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				606F81C61838113D00098F59 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		606F81D91838113E00098F59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				606F81DA1838113E00098F59 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -458,6 +708,98 @@
 			};
 			name = Release;
 		};
+		606F81DF1838113E00098F59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "People Data Builder/People Data Builder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "People Data Builder/People Data Builder-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		606F81E01838113E00098F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "People Data Builder/People Data Builder-Prefix.pch";
+				INFOPLIST_FILE = "People Data Builder/People Data Builder-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		606F81E21838113E00098F59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/People.app/People";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "People Data Builder/People Data Builder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "People Data BuilderTests/People Data BuilderTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		606F81E31838113E00098F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/People.app/People";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "People Data Builder/People Data Builder-Prefix.pch";
+				INFOPLIST_FILE = "People Data BuilderTests/People Data BuilderTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +825,22 @@
 			buildConfigurations = (
 				606F81A61838111A00098F59 /* Debug */,
 				606F81A71838111A00098F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		606F81DE1838113E00098F59 /* Build configuration list for PBXNativeTarget "People Data Builder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606F81DF1838113E00098F59 /* Debug */,
+				606F81E01838113E00098F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		606F81E11838113E00098F59 /* Build configuration list for PBXNativeTarget "People Data BuilderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606F81E21838113E00098F59 /* Debug */,
+				606F81E31838113E00098F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
